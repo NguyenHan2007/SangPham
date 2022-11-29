@@ -24,10 +24,12 @@
                         <thead>
                             <tr>
                                 <th class="shoping__product">Products</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th>Discount</th>
                                 <th></th>
+                                <th>Quantity</th>
+                                <th></th>
+                                <th>Price</th>
+                                <th></th>
+                                <th>Discount</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -38,12 +40,22 @@
                                     <img src="{{pathImg}}" height="100px" width="150ypx" alt="">
                                     <h5>{{name}}</h5>
                                 </td>
+                                <td class="shoping__cart__item_plus">
+                                    <span class="fas fa-minus"
+                                        onclick="RemoveCart(`{{_id}}`,`{{price}}`,`{{discount}}`)"></span>
+                                </td>
                                 <td class="shoping__cart__price">
-                                               {{quantity}}
-                                   
+                                    {{quantity}}
+                                </td>
+                                <td class="shoping__cart__item_plus">
+                                    <span class="fas fa-plus"
+                                        onclick="RemoveCart(`{{_id}}`,`{{price}}`,`{{discount}}`)"></span>
                                 </td>
                                 <td class="shoping__cart__price">
                                     {{price}}
+                                </td>
+                                <td class="shoping__cart__item__close">
+                                    
                                 </td>
                                 <td class="shoping__cart__price">
                                     {{discountpercent}}

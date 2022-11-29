@@ -1,4 +1,3 @@
-const Course = require("../Models/course.model");
 const Bill = require("../Models/bill.model");
 const Cart = require("../Models/cart.model");
 const Product = require("../Models/product.model");

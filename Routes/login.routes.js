@@ -4,7 +4,6 @@ const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const User = require('../Models/user.model');
 const Cart = require('../Models/cart.model');
-const Course = require('../Models/course.model');
 const checkAuthenticated = require('../Middlewares/auth.mdw').checkAuthenticated;
 
 router.get(`/`, (req, res) => {
@@ -84,11 +83,11 @@ router.post('/register', (req, res) => {
                                 });
                                 carts.save();
                                 // Tạo mycourse
-                                var courses = new Course({
-                                    iduser: user._id,
-                                    idproducts: []
-                                });
-                                courses.save();
+                                //var courses = new Course({
+                                 //   iduser: user._id,
+                                  //  idproducts: []
+                               // });
+                                //courses.save();
                                 //Tạo class
                                 res.redirect('/login/profile');
                             })

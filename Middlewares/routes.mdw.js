@@ -7,8 +7,7 @@ module.exports = (app) => {
     cart = require('../Routes/cart.routes');
     pay = require('../Routes/pay.routes');
     paypal = require('../Routes/paypal.routes');
-    mycourse = require('../Routes/mycourse.routes');
-    myclass = require('../Routes/myclass.routes');
+    bill = require('../Routes/bill.routes');
     restrict = require('../Middlewares/auth.mdw').checkAuthenticated;
     const role = require('../Middlewares/role.mdw');
     const { settingRole, isAdmin, isUser, isTeacher } = role;
@@ -19,8 +18,7 @@ module.exports = (app) => {
     app.use('/product', settingRole, product);
     app.use('/category', settingRole, category);
     app.use('/cart', restrict, settingRole, isUser, cart);
-    app.use('/mycourse', restrict, settingRole, isUser, mycourse);
-    app.use('/myclass', restrict, settingRole, isTeacher, myclass);
+    app.use('/mybills', restrict, settingRole, isUser, bill);
     app.use('/pay', restrict, settingRole, isUser, pay);
     app.use('/paypal', restrict, settingRole, isUser, paypal);
 }

@@ -11,7 +11,6 @@ module.exports = {
                     return ({...product, discountpercent: product.discount*100, quantity: idproduct.quantity});
                     
                 }));
-                console.log(listproduct);
                 Cart.findByIdAndUpdate(MyCart._id, { totalprice: TotalPrice }, function (err, result) { });
                 res.render('./Client/shop-cart', {
                     layout: 'client',

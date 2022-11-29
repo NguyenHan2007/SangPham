@@ -1,7 +1,6 @@
 const User = require("../Models/user.model");
 const Product = require("../Models/product.model");
 const Bill = require("../Models/bill.model");
-const Course = require("../Models/course.model");
 const Class = require("../Models/class.model");
 module.exports = {
     // addproduct: async ()=>

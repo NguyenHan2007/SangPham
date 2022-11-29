@@ -20,15 +20,18 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown">
                             <a class="dropdown-item" href="/login/profile">My Profile</a>
-                            <a class="dropdown-item" href="/mycourse">My Courses</a>
+                            <a class="dropdown-item" href="/mybills">My Bills</a>
+                            <!--
                             {{#if isTeacher}}
                             <a class="dropdown-item" href="/myclass">My Classes</a>
                             {{/if}}
+                            
                             {{#if Checking}}
                             <a class="dropdown-item disabled" href="#">Checking</a>
                             {{else}}
                             <a class="dropdown-item" href="/registerteacher">Register</a>
                             {{/if}}
+                            -->
                             <a class="dropdown-item" href="/login/logout">Logout</a>
                         </div>
                         {{else}}
@@ -89,16 +92,19 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown">
                             <a class="dropdown-item" href="/login/profile">My Profile</a>
-                            <a class="dropdown-item" href="/mycourse">My Courses</a>
+                            <a class="dropdown-item" href="/mybills">My Bills</a>
                             {{#if isTeacher}}
                             <a class="dropdown-item" href="/myclass">My Classes</a>
                             {{/if}}
+                            <!--
                             {{#if Checking}}
                             <a class="dropdown-item disabled" href="#">Checking</a>
                             {{/if}}
                             {{#if isStudent}}
                             <a class="dropdown-item" href="/registerteacher">Register</a>
+                           
                             {{/if}}
+                             -->
                             <a class="dropdown-item" href="/login/logout">Logout</a>
                         </div>
                         {{else}}
