@@ -15,6 +15,10 @@ const billSchema = new Schema(
 		check: {
 			type: Number,
 			default: 0,
+		},
+		checkstatus: {
+			type: String,
+			default: "Chờ xác nhận",
 		}
 	},
 	{
